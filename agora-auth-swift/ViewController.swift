@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ChatTokenBuilder.buildUserToken(withUserID: "test_user_1")
+        ChatTokenBuilder.buildAppToken()
         // Do any additional setup after loading the view.
     }
 
