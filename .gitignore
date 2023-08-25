@@ -19,9 +19,5 @@ xcuserdata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-### Projects ###
-*.xcodeproj
-*.xcworkspace
-
 Pods
 

@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D224AD82A98A60500DA6470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D224AD72A98A60500DA6470 /* AppDelegate.swift */; };
+		5D224ADA2A98A60500DA6470 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D224AD92A98A60500DA6470 /* SceneDelegate.swift */; };
+		5D224ADC2A98A60500DA6470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D224ADB2A98A60500DA6470 /* ViewController.swift */; };
+		5D224ADF2A98A60500DA6470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D224ADD2A98A60500DA6470 /* Main.storyboard */; };
+		5D224AE12A98A60600DA6470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D224AE02A98A60600DA6470 /* Assets.xcassets */; };
+		5D224AE42A98A60600DA6470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D224AE22A98A60600DA6470 /* LaunchScreen.storyboard */; };
+		5D224B052A98AC9E00DA6470 /* ChatTokenBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D224AEC2A98AC9E00DA6470 /* ChatTokenBuilder.mm */; };
+		5D224B062A98AC9E00DA6470 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D224AF12A98AC9E00DA6470 /* md5.cpp */; };
+		5D224B072A98AC9E00DA6470 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5D224AFD2A98AC9E00DA6470 /* README.md */; };
+		5D224B0A2A98AD1500DA6470 /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 5D224B092A98AD1500DA6470 /* OpenSSL */; };
+		5D224B0D2A98AD2500DA6470 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D224B0C2A98AD2500DA6470 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D224AD42A98A60500DA6470 /* agora-auth-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "agora-auth-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D224AD72A98A60500DA6470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D224AD92A98A60500DA6470 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5D224ADB2A98A60500DA6470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D224ADE2A98A60500DA6470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D224AE02A98A60600DA6470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D224AE32A98A60600DA6470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D224AE52A98A60600DA6470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D224AEC2A98AC9E00DA6470 /* ChatTokenBuilder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChatTokenBuilder.mm; sourceTree = "<group>"; };
+		5D224AED2A98AC9E00DA6470 /* ChatTokenBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTokenBuilder.h; sourceTree = "<group>"; };
+		5D224AEF2A98AC9E00DA6470 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		5D224AF12A98AC9E00DA6470 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5.cpp; sourceTree = "<group>"; };
+		5D224AF22A98AC9E00DA6470 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		5D224AF32A98AC9E00DA6470 /* DynamicKey5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicKey5.h; sourceTree = "<group>"; };
+		5D224AF42A98AC9E00DA6470 /* Packer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packer.h; sourceTree = "<group>"; };
+		5D224AF52A98AC9E00DA6470 /* FpaTokenBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FpaTokenBuilder.h; sourceTree = "<group>"; };
+		5D224AF62A98AC9E00DA6470 /* ChatTokenBuilder2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTokenBuilder2.h; sourceTree = "<group>"; };
+		5D224AF72A98AC9E00DA6470 /* RtcTokenBuilder2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtcTokenBuilder2.h; sourceTree = "<group>"; };
+		5D224AF82A98AC9E00DA6470 /* generatorSignalToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generatorSignalToken.h; sourceTree = "<group>"; };
+		5D224AF92A98AC9E00DA6470 /* RtmTokenBuilder2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtmTokenBuilder2.h; sourceTree = "<group>"; };
+		5D224AFA2A98AC9E00DA6470 /* AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessToken.h; sourceTree = "<group>"; };
+		5D224AFB2A98AC9E00DA6470 /* DynamicKey2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicKey2.h; sourceTree = "<group>"; };
+		5D224AFC2A98AC9E00DA6470 /* EducationTokenBuilder2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationTokenBuilder2.h; sourceTree = "<group>"; };
+		5D224AFD2A98AC9E00DA6470 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5D224AFE2A98AC9E00DA6470 /* AccessToken2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessToken2.h; sourceTree = "<group>"; };
+		5D224AFF2A98AC9E00DA6470 /* RtmTokenBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtmTokenBuilder.h; sourceTree = "<group>"; };
+		5D224B002A98AC9E00DA6470 /* DynamicKey3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicKey3.h; sourceTree = "<group>"; };
+		5D224B012A98AC9E00DA6470 /* generatorSignalToken-Linux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "generatorSignalToken-Linux.h"; sourceTree = "<group>"; };
+		5D224B022A98AC9E00DA6470 /* RtcTokenBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtcTokenBuilder.h; sourceTree = "<group>"; };
+		5D224B032A98AC9E00DA6470 /* DynamicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicKey.h; sourceTree = "<group>"; };
+		5D224B042A98AC9E00DA6470 /* DynamicKey4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicKey4.h; sourceTree = "<group>"; };
+		5D224B0C2A98AD2500DA6470 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5D224B142A98AE6C00DA6470 /* agora-auth-swift-Bridging-Header.h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "agora-auth-swift-Bridging-Header.h.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D224AD12A98A60500DA6470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D224B0D2A98AD2500DA6470 /* libz.tbd in Frameworks */,
+				5D224B0A2A98AD1500DA6470 /* OpenSSL in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D224ACB2A98A60500DA6470 = {
+			isa = PBXGroup;
+			children = (
+				5D224AD62A98A60500DA6470 /* agora-auth-swift */,
+				5D224AD52A98A60500DA6470 /* Products */,
+				5D224B0B2A98AD2500DA6470 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D224AD52A98A60500DA6470 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D224AD42A98A60500DA6470 /* agora-auth-swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D224AD62A98A60500DA6470 /* agora-auth-swift */ = {
+			isa = PBXGroup;
+			children = (
+				5D224AEB2A98AC9E00DA6470 /* TokenBuilders */,
+				5D224AD72A98A60500DA6470 /* AppDelegate.swift */,
+				5D224AD92A98A60500DA6470 /* SceneDelegate.swift */,
+				5D224ADB2A98A60500DA6470 /* ViewController.swift */,
+				5D224ADD2A98A60500DA6470 /* Main.storyboard */,
+				5D224AE02A98A60600DA6470 /* Assets.xcassets */,
+				5D224AE22A98A60600DA6470 /* LaunchScreen.storyboard */,
+				5D224AE52A98A60600DA6470 /* Info.plist */,
+				5D224B142A98AE6C00DA6470 /* agora-auth-swift-Bridging-Header.h.h */,
+			);
+			path = "agora-auth-swift";
+			sourceTree = "<group>";
+		};
+		5D224AEB2A98AC9E00DA6470 /* TokenBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				5D224AEE2A98AC9E00DA6470 /* src */,
+				5D224AED2A98AC9E00DA6470 /* ChatTokenBuilder.h */,
+				5D224AEC2A98AC9E00DA6470 /* ChatTokenBuilder.mm */,
+			);
+			path = TokenBuilders;
+			sourceTree = "<group>";
+		};
+		5D224AEE2A98AC9E00DA6470 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5D224AEF2A98AC9E00DA6470 /* utils.h */,
+				5D224AF02A98AC9E00DA6470 /* md5 */,
+				5D224AF32A98AC9E00DA6470 /* DynamicKey5.h */,
+				5D224AF42A98AC9E00DA6470 /* Packer.h */,
+				5D224AF52A98AC9E00DA6470 /* FpaTokenBuilder.h */,
+				5D224AF62A98AC9E00DA6470 /* ChatTokenBuilder2.h */,
+				5D224AF72A98AC9E00DA6470 /* RtcTokenBuilder2.h */,
+				5D224AF82A98AC9E00DA6470 /* generatorSignalToken.h */,
+				5D224AF92A98AC9E00DA6470 /* RtmTokenBuilder2.h */,
+				5D224AFA2A98AC9E00DA6470 /* AccessToken.h */,
+				5D224AFB2A98AC9E00DA6470 /* DynamicKey2.h */,
+				5D224AFC2A98AC9E00DA6470 /* EducationTokenBuilder2.h */,
+				5D224AFD2A98AC9E00DA6470 /* README.md */,
+				5D224AFE2A98AC9E00DA6470 /* AccessToken2.h */,
+				5D224AFF2A98AC9E00DA6470 /* RtmTokenBuilder.h */,
+				5D224B002A98AC9E00DA6470 /* DynamicKey3.h */,
+				5D224B012A98AC9E00DA6470 /* generatorSignalToken-Linux.h */,
+				5D224B022A98AC9E00DA6470 /* RtcTokenBuilder.h */,
+				5D224B032A98AC9E00DA6470 /* DynamicKey.h */,
+				5D224B042A98AC9E00DA6470 /* DynamicKey4.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5D224AF02A98AC9E00DA6470 /* md5 */ = {
+			isa = PBXGroup;
+			children = (
+				5D224AF12A98AC9E00DA6470 /* md5.cpp */,
+				5D224AF22A98AC9E00DA6470 /* md5.h */,
+			);
+			path = md5;
+			sourceTree = "<group>";
+		};
+		5D224B0B2A98AD2500DA6470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D224B0C2A98AD2500DA6470 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D224AD32A98A60500DA6470 /* agora-auth-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D224AE82A98A60600DA6470 /* Build configuration list for PBXNativeTarget "agora-auth-swift" */;
+			buildPhases = (
+				5D224AD02A98A60500DA6470 /* Sources */,
+				5D224AD12A98A60500DA6470 /* Frameworks */,
+				5D224AD22A98A60500DA6470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "agora-auth-swift";
+			packageProductDependencies = (
+				5D224B092A98AD1500DA6470 /* OpenSSL */,
+			);
+			productName = "agora-auth-swift";
+			productReference = 5D224AD42A98A60500DA6470 /* agora-auth-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D224ACC2A98A60500DA6470 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5D224AD32A98A60500DA6470 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5D224ACF2A98A60500DA6470 /* Build configuration list for PBXProject "agora-auth-swift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D224ACB2A98A60500DA6470;
+			packageReferences = (
+				5D224B082A98AD1500DA6470 /* XCRemoteSwiftPackageReference "OpenSSL" */,
+			);
+			productRefGroup = 5D224AD52A98A60500DA6470 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D224AD32A98A60500DA6470 /* agora-auth-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D224AD22A98A60500DA6470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D224AE42A98A60600DA6470 /* LaunchScreen.storyboard in Resources */,
+				5D224AE12A98A60600DA6470 /* Assets.xcassets in Resources */,
+				5D224B072A98AC9E00DA6470 /* README.md in Resources */,
+				5D224ADF2A98A60500DA6470 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D224AD02A98A60500DA6470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D224ADC2A98A60500DA6470 /* ViewController.swift in Sources */,
+				5D224B062A98AC9E00DA6470 /* md5.cpp in Sources */,
+				5D224AD82A98A60500DA6470 /* AppDelegate.swift in Sources */,
+				5D224ADA2A98A60500DA6470 /* SceneDelegate.swift in Sources */,
+				5D224B052A98AC9E00DA6470 /* ChatTokenBuilder.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D224ADD2A98A60500DA6470 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D224ADE2A98A60500DA6470 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D224AE22A98A60600DA6470 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D224AE32A98A60600DA6470 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D224AE62A98A60600DA6470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D224AE72A98A60600DA6470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D224AE92A98A60600DA6470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "agora-auth-swift/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CarlsonYuan.agora-auth-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/agora-auth-swift/agora-auth-swift-Bridging-Header.h.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D224AEA2A98A60600DA6470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "agora-auth-swift/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CarlsonYuan.agora-auth-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/agora-auth-swift/agora-auth-swift-Bridging-Header.h.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D224ACF2A98A60500DA6470 /* Build configuration list for PBXProject "agora-auth-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D224AE62A98A60600DA6470 /* Debug */,
+				5D224AE72A98A60600DA6470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D224AE82A98A60600DA6470 /* Build configuration list for PBXNativeTarget "agora-auth-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D224AE92A98A60600DA6470 /* Debug */,
+				5D224AEA2A98A60600DA6470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D224B082A98AD1500DA6470 /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D224B092A98AD1500DA6470 /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D224B082A98AD1500DA6470 /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5D224ACC2A98A60500DA6470 /* Project object */;
+}
